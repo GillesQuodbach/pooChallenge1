@@ -1,5 +1,6 @@
+package fr.fms.graphic;
 
-public class Challenge {
+public class TestShapes {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
