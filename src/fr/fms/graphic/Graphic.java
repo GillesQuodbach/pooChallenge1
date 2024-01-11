@@ -28,19 +28,19 @@ public class Graphic extends JFrame {
 	public void paint(Graphics g) {	
 		super.paint(g);
 //		
-//		g.fillOval(150, 50, 135, 35);	// x , y , largeur , hauteur (diamètre)
-//		g.drawOval(50, 50, 145, 70);
-//		g.drawRect(50, 150, 50, 50);
-//		g.fillRect(150, 150, 70, 50);	
+		g.fillOval(150, 50, 135, 35);	// x , y , largeur , hauteur (diamètre)
+		g.drawOval(50, 50, 145, 70);
+		g.drawRect(50, 150, 50, 50);
+		g.fillRect(150, 150, 70, 50);	
 //	
 //		
 //		// Rajout
 //		
-//		Graphics2D g2d = (Graphics2D)g;
-//		g2d.setPaint(new GradientPaint(0, 0, Color.GREEN, 50, 50, Color.RED,true));
-//		g2d.fillRect(250, 50, 70, 50);		
-//		
-//		g2d.fillOval(250,150,55,55);		
+		Graphics2D g2d = (Graphics2D)g;
+		g2d.setPaint(new GradientPaint(0, 0, Color.GREEN, 50, 50, Color.RED,true));
+		g2d.fillRect(250, 50, 70, 50);		
+		
+		g2d.fillOval(250,150,55,55);		
 	}
 	
 	public static void main(String[] args) {
