@@ -15,6 +15,10 @@ public void setCenter(Point center) {
 	this.center = center;
 }
 
+public Point getCenter() {
+	return center;
+}
+
 @Override
 public String toString() {
 	return " Shape [center = " + center + "]";
