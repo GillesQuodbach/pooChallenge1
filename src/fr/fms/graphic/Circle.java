@@ -1,36 +1,22 @@
 package fr.fms.graphic;
 
-public class Circle {
-private int x;
-private int y;
+public class Circle extends Shape{
+
 private double radius;
 
 public Circle(double radius, int x, int y) {
+	super(x,y);
 	setRadius(radius);
-	setX(x);
-	setY(y);
+}
+
+public Circle(double radius, Point center) {
+	super(center);
+	setRadius(radius);
 }
 
 public Circle() {
+	super(0,0);
 	setRadius(1);
-	setX(0);
-	setY(0);
-}
-
-public int getX() {
-	return x;
-}
-
-public void setX(int x) {
-	this.x =x;
-}
-
-public int getY() {
-	return y;
-}
-
-public void setY(int y) {
-	this.y = y;
 }
 
 public double getRadius() {
@@ -41,4 +27,18 @@ public void setRadius(double radius) {
 	if (radius < 0) radius = 1;
 	else this.radius = radius;
 }
+
+public double area() {
+	return Math.PI * this.radius * this.radius;
+}
+
+public double perimeter() {
+	return 2 * Math.PI * this.radius;
+}
+
+@Override
+public String toString() {
+	return "Circle : radius = " + radius + super.toString();
+}
+
 }
