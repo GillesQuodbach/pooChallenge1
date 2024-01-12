@@ -12,10 +12,14 @@ import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JFrame;
-
+//*********************************
+// CREATION DE LA FENETRE GRAPHIQUE
+//*********************************
 public class Graphic extends JFrame {
 	private static final long serialVersionUID = 1L;
-	
+	// *********************************
+	// CONSTRUCTEUR
+	// *********************************
 	public Graphic() {
 		super("Voici nos formes géométriques !");			
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -23,7 +27,9 @@ public class Graphic extends JFrame {
 		setLocationRelativeTo(null);	
 		setVisible(true);			
 	}
-	
+	// *********************************
+	// METHODE QUI DESSINE LES FORMES
+	// *********************************
 	@Override	//le repère commence en haut à gauche (0,0)
 	public void paint(Graphics g) {	
 		super.paint(g);
